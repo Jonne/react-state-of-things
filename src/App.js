@@ -1,6 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ClassComponent from './ClassComponent';
+import FunctionComponent from './FunctionComponent';
+
+import TextResourceProvider from './TextResourceProvider';
+import ResourcedText from './ResourcedText';
+
 
 function App() {
   return (
@@ -18,6 +24,18 @@ function App() {
         >
           Lear2n React
         </a>
+
+        <ClassComponent />
+        <FunctionComponent />
+
+        <TextResourceProvider>
+          <div>
+            <ResourcedText resourceKey="hello" />
+
+            <ResourcedText resourceKey="hello2" />
+          </div>
+        </TextResourceProvider>
+
       </header>
     </div>
   );
